@@ -1,0 +1,37 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "engines": {
+    "yarn": "<=v1.22.19",
+    "node": ">= 16.20.0",
+    "npm": "please use yarn to run this project"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "format": "prettier ./**/*.{vue,ts,tsx,js,jsx,css,scss,md,json} --write",
+    "lint": "eslint ./**/*.{vue,ts,tsx,js,jsx} --fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "17.6.1",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/node": "^18",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "nuxt": "^3.4.2",
+    "prettier": "^2.8.8"
+  },
+  "lint-staged": {
+    "*.{vue,ts,js}": [
+      "eslint --fix"
+    ],
+    "*.{vue,ts,js,css,scss,md,json}": "prettier --write"
+  }
+}
