@@ -1,4 +1,3 @@
 <template>
-  <div>
-    about 2</div>
+  <div>about 2</div>
 </template>
