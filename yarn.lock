@@ -986,7 +986,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.4.3":
+"@nuxt/kit@npm:3.4.3, @nuxt/kit@npm:^3.4.2":
   version: 3.4.3
   resolution: "@nuxt/kit@npm:3.4.3"
   dependencies:
@@ -1198,6 +1198,13 @@ __metadata:
     tiny-glob: ^0.2.9
     tslib: ^2.4.0
   checksum: 118a1971120253740121a1db0a6658c21195b7da962acf9c124b507a3df707cfc97b0b84a16edcbd4352853b182e8337da9fc6e8e3d06c60d75ae4fb42321c75
+  languageName: node
+  linkType: hard
+
+"@quasar/extras@npm:^1.16.3":
+  version: 1.16.3
+  resolution: "@quasar/extras@npm:1.16.3"
+  checksum: addadc5409abc61e110ff00ac2379711d9064640ab83676b8e3dcc33cba8ebd4b556d65f155eb9bf3763b1201d63f4821c7d30100d4f77d2a0aa8669cc0fbb6c
   languageName: node
   linkType: hard
 
@@ -3965,13 +3972,16 @@ __metadata:
     "@commitlint/cli": ^17.6.1
     "@commitlint/config-conventional": 17.6.1
     "@nuxtjs/eslint-config-typescript": ^12.0.0
+    "@quasar/extras": ^1.16.3
     "@types/node": ^18
     eslint: ^8.39.0
     eslint-config-prettier: ^8.8.0
     husky: ^8.0.3
     lint-staged: ^13.2.2
     nuxt: ^3.4.3
+    nuxt-quasar-ui: ^1.7.3
     prettier: ^2.8.8
+    quasar: ^2.11.10
   languageName: unknown
   linkType: soft
 
@@ -6487,6 +6497,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxt-quasar-ui@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "nuxt-quasar-ui@npm:1.7.3"
+  dependencies:
+    "@nuxt/kit": ^3.4.2
+    "@rollup/pluginutils": ^5.0.2
+    magic-string: ^0.30.0
+    p-memoize: ^7.1.1
+    unplugin: ^1.3.1
+  peerDependencies:
+    quasar: ^2.8.0
+  checksum: fc46110f144edca7495bd992aabd01471d82810135b744661127eaf57d8bcb84ca6b81fac374dca1d9eb9c7cf7d2f7b6d2859e44b782b28f3aaf86bedf2e7865
+  languageName: node
+  linkType: hard
+
 "nuxt@npm:^3.4.3":
   version: 3.4.3
   resolution: "nuxt@npm:3.4.3"
@@ -6748,6 +6773,16 @@ __metadata:
   dependencies:
     aggregate-error: ^3.0.0
   checksum: cb0ab21ec0f32ddffd31dfc250e3afa61e103ef43d957cc45497afe37513634589316de4eb88abdfd969fe6410c22c0b93ab24328833b8eb1ccc087fc0442a1c
+  languageName: node
+  linkType: hard
+
+"p-memoize@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "p-memoize@npm:7.1.1"
+  dependencies:
+    mimic-fn: ^4.0.0
+    type-fest: ^3.0.0
+  checksum: 2fc5b12fc530aed9c1e455f706d8da2a2e6bed4573f611a4e92b2a75f253e8c0acc63ad014b55f155b5d5de110c586b490a4d6612d64bc743106cad626d995fd
   languageName: node
   linkType: hard
 
@@ -7368,6 +7403,13 @@ __metadata:
   version: 1.5.1
   resolution: "q@npm:1.5.1"
   checksum: 147baa93c805bc1200ed698bdf9c72e9e42c05f96d007e33a558b5fdfd63e5ea130e99313f28efc1783e90e6bdb4e48b67a36fcc026b7b09202437ae88a1fb12
+  languageName: node
+  linkType: hard
+
+"quasar@npm:^2.11.10":
+  version: 2.11.10
+  resolution: "quasar@npm:2.11.10"
+  checksum: a2fde0a772064f038cca11e25d3c5bbee743617fafa4b239a2bf04515227971363b8e4bc951fccccebeb0454dfcacdbf2937168ad2dcd910411c0615f5f42886
   languageName: node
   linkType: hard
 

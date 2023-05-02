@@ -27,6 +27,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "nuxt": "^3.4.3",
+    "nuxt-quasar-ui": "^1.7.3",
     "prettier": "^2.8.8"
   },
   "lint-staged": {
@@ -34,5 +35,9 @@
       "eslint --fix"
     ],
     "*.{vue,ts,js,css,scss,md,json}": "prettier --write"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.3",
+    "quasar": "^2.11.10"
   }
 }
