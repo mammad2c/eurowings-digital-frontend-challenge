@@ -15,29 +15,36 @@
     "postinstall": "nuxt prepare",
     "format": "prettier ./**/*.{vue,ts,tsx,js,jsx,css,scss,md,json} --write",
     "lint": "eslint ./**/*.{vue,ts,tsx,js,jsx} --fix",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "test:unit": "vitest"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.3",
+    "quasar": "^2.11.10"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "17.6.1",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/vue": "^7.0.0",
     "@types/node": "^18",
+    "@vitejs/plugin-vue": "^4.2.1",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
+    "jsdom": "^22.0.0",
     "lint-staged": "^13.2.2",
+    "msw": "^1.2.1",
     "nuxt": "^3.4.3",
     "nuxt-quasar-ui": "^1.7.3",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "vitest": "^0.30.1"
   },
   "lint-staged": {
     "*.{vue,ts,js}": [
       "eslint --fix"
     ],
     "*.{vue,ts,js,css,scss,md,json}": "prettier --write"
-  },
-  "dependencies": {
-    "@quasar/extras": "^1.16.3",
-    "quasar": "^2.11.10"
   }
 }
