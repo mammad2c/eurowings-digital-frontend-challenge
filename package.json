@@ -2,9 +2,9 @@
   "name": "eurowings-digital-frontend-challenge",
   "private": true,
   "engines": {
-    "yarn": ">=3.x.x",
+    "yarn": "<2",
     "node": ">= 16.20.0",
-    "npm": "please use yarn to run this project"
+    "npm": "please use yarn>=3.x.x to run this project"
   },
   "scripts": {
     "prepare": "husky install",
@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.3",
-    "quasar": "^2.11.10"
+    "quasar": "^2.11.10",
+    "validator": "^13.9.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
@@ -29,6 +30,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/vue": "^7.0.0",
     "@types/node": "^18",
+    "@types/validator": "^13.7.15",
     "@vitejs/plugin-vue": "^4.2.1",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
@@ -38,13 +40,16 @@
     "msw": "^1.2.1",
     "nuxt": "^3.4.3",
     "nuxt-quasar-ui": "^1.7.3",
+    "nuxt-vitest": "^0.6.12",
     "prettier": "^2.8.8",
-    "vitest": "^0.30.1"
+    "sass": "^1.62.1",
+    "vitest": "^0.31.0"
   },
   "lint-staged": {
     "*.{vue,ts,js}": [
       "eslint --fix"
     ],
     "*.{vue,ts,js,css,scss,md,json}": "prettier --write"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }
