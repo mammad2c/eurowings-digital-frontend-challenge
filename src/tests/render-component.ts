@@ -1,4 +1,5 @@
 import { render, RenderOptions } from "@testing-library/vue";
+import { Quasar } from "quasar";
 
 const renderComponent = (
   component: unknown,
@@ -6,7 +7,7 @@ const renderComponent = (
 ) =>
   render(component, {
     global: {
-      plugins: [],
+      plugins: [Quasar],
     },
     ...renderOptions,
   });

@@ -1,1 +1,10 @@
-export { default as Button } from "./button/button.vue";
+export { QSelect as UISelect } from "quasar";
+export { QInput as UIInput } from "quasar";
+export type { QInputProps as UIInputProps } from "quasar";
+export { QBtn as UIButton } from "quasar";
+export { QCard as UICard } from "quasar";
+export { QHeader as UIHeader } from "quasar";
+export { QFooter as UIFooter } from "quasar";
+export { QPageContainer as UIPageContainer } from "quasar";
+export { QToolbar as UIToolbar, QToolbarTitle as UIToolbarTitle } from "quasar";
+export { QLayout as UILayout } from "quasar";
