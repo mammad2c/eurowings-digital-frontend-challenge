@@ -1,6 +1,6 @@
-export { QSelect as UISelect } from "quasar";
-export { QInput as UIInput } from "quasar";
-export type { QInputProps as UIInputProps } from "quasar";
+export { default as UISelect } from "./ui-select/ui-select.vue";
+export { default as UIInput } from "./ui-input/ui-input.vue";
+export type { UIInputProps } from "./ui-input/ui-input.vue";
 export { QBtn as UIButton } from "quasar";
 export { QCard as UICard } from "quasar";
 export { QHeader as UIHeader } from "quasar";
