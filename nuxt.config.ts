@@ -6,5 +6,7 @@ export default defineNuxtConfig({
     extras: {
       fontIcons: ["material-icons"],
     },
+    sassVariables: "src/css/quasar.variables.scss",
+    quietSassWarnings: true,
   },
 });
